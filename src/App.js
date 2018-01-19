@@ -6,15 +6,9 @@ import IdeaTemplate from './components/idea-template';
 class App extends Component {
   constructor(props){
     super(props);
-
     this.addIdea = this.addIdea.bind(this);
     this.state = {
-      ideas : [
-        {
-            title : "Social network",
-            description : "Bla Bla bla"
-        }
-      ],
+      ideas : [],
       numOfIdeas : 1,
     }
   }
@@ -40,7 +34,7 @@ class App extends Component {
       </div>
     )
   }
-
+  
   createIdeas(){
     let ideas = [];
     for (let index = 0; index < this.state.numOfIdeas; index++) {

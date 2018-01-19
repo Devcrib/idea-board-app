@@ -35,8 +35,7 @@ body {
 }
 
 .ideas-container{
-  padding-left: 18px;
-  /* background-color: yellow; */
+  padding-left: 20px;
   overflow: hidden;
 }
 .idea-feed{
@@ -46,6 +45,28 @@ body {
   background-color: bisque;
 }
 
+.idea-feed .cancel{
+  float: right;
+  color: red;
+}
+.cancel > span{
+  visibility: hidden;
+}
+.cancel:hover > span{
+  visibility: visible;
+  cursor: pointer;
+}
+
+.idea-feed input[type = text]{
+  background-color: bisque;
+  border: none;
+  padding: 5px 0;
+  outline: none;
+}
 .idea-feed textarea{
   margin-top: 10px;
+  background-color: bisque;
+  border: none;
+  outline: none;
+  resize: none;
 }
